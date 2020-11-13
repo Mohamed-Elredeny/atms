@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="07f840c5-acac-453c-aa86-1466e7b6c3c2" name="Default Changelist" comment="" />
+    <list default="true" id="07f840c5-acac-453c-aa86-1466e7b6c3c2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,6 +12,9 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -138,6 +143,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1jV4P1oyEYCOCsFdJAUGqxFYhbS" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -145,7 +151,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../SwccHousing" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Psychologist/WebSite/Psychologist" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -171,7 +177,7 @@
       <workItem from="1603875901706" duration="1773000" />
       <workItem from="1603908038070" duration="117000" />
       <workItem from="1604028174035" duration="5250000" />
-      <workItem from="1604058810855" duration="5661000" />
+      <workItem from="1604058810855" duration="6615000" />
     </task>
     <servers />
   </component>
@@ -179,9 +185,18 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1604030612545">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="1832" y="147" key="FileChooserDialogImpl" timestamp="1604070198019">
+      <screen x="1366" y="0" width="1376" height="900" />
     </state>
+    <state x="1832" y="147" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1376.900@1366.0.1376.900" timestamp="1604070198019" />
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1604030612545" />
+    <state x="1932" y="348" key="Github.ShareDialog" timestamp="1604066485065">
+      <screen x="1366" y="0" width="1376" height="900" />
+    </state>
+    <state x="1932" y="348" key="Github.ShareDialog/0.0.1366.728/1366.0.1376.900@1366.0.1376.900" timestamp="1604066485065" />
+    <state x="1802" y="154" key="Github.UntrackedFilesDialog" timestamp="1604066541717">
+      <screen x="1366" y="0" width="1376" height="900" />
+    </state>
+    <state x="1802" y="154" key="Github.UntrackedFilesDialog/0.0.1366.728/1366.0.1376.900@1366.0.1376.900" timestamp="1604066541717" />
   </component>
 </project>
