@@ -8,9 +8,9 @@
                             class="ft-menu font-large-1"></i></a></li>
                 <li class="nav-item">
                     <a class="navbar-brand" href="">
-                        <img class="brand-logo" alt="modern admin logo"
-                             src="{{ asset('Admin/images/logo/logo.png') }}">
-                        <h3 class="brand-text">خدماتي</h3>
+                    <center>
+                        <h3 style="" class="brand-text">Atms Dashboard</h3>
+                    </center>
                     </a>
                 </li>
 
@@ -22,8 +22,11 @@
         </div>
         <div class="navbar-container content">
             <div class="collapse navbar-collapse" id="navbar-mobile">
+
                 <ul class="nav navbar-nav mr-auto float-right">
                     <!-- Notifications -->
+                    <li class="nav-item d-none d-md-block"><a class="nav-link nav-menu-main menu-toggle hidden-xs"
+                                                              href="#"><i class="ft-menu"></i></a></li>
                     <li class="dropdown dropdown-notification nav-item">
                         <a class="nav-link nav-link-label" href="#" data-toggle="dropdown"><i class="ficon ft-bell"></i>
                             <span class="badge badge-pill badge-default badge-danger badge-default badge-up badge-glow">5</span>

@@ -1,53 +1,28 @@
 <?php use Kreait\Firebase\Factory;
-/*$factory = (new Factory())
-    ->withDatabaseUri('https://swcc-housing.firebaseio.com/');
-$database = $factory->createDatabase();
-$services = $database->getReference('Services/')->getSnapshot()->getValue();
-
-function SelServ($city){
-    $factory = (new Factory())
-        ->withDatabaseUri('https://swcc-housing.firebaseio.com/');
-    $database = $factory->createDatabase();
-    $services = $database->getReference('Services/'.$city)->getSnapshot()->getValue();
-    if(@count($services) > 0 ){
-        return $services;
-    }else{
-        return  false;
-    }
-
-}
-function SelClinic($city){
-    $factory = (new Factory())
-        ->withDatabaseUri('https://swcc-housing.firebaseio.com/');
-    $database = $factory->createDatabase();
-    $services = $database->getReference('clinicCategory/'.$city)->getSnapshot()->getValue();
-    if(@count($services) > 0 ){
-        return $services;
-    }else{
-        return  false;
-    }
-
-}*/
-
 
 ?>
+<style>
+    *{
+        direction: ltr;
+    }
+</style>
 <div class="main-menu menu-fixed menu-light menu-accordion    menu-shadow " data-scroll-to-active="true">
-    <div class="main-menu-content" style="text-align: RIGHT">
-        <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+    <div class="main-menu-content">
+        <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation" style="direction: ltr;text-align: left">
 
 
                 <!--Users -->
                 <li class="nav-item"><a href="#"><i class="la la-home"></i>
-                        <span class="menu-title" data-i18n="nav.dash.main">المستخدمين</span>
+                        <span class="menu-title" data-i18n="nav.dash.main">Users</span>
                     </a>
                     <ul class="menu-content">
                         <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
                             <li class="nav-item"><a href="#"><i class="la la-home"></i>
-                                    <span class="menu-title" data-i18n="nav.dash.main">المسئولين </span>
+                                    <span class="menu-title" data-i18n="nav.dash.main">Super Admins </span>
                                 </a>
                                 <ul class="menu-content">
                                     <li class="active"><a class="menu-item" href=""
-                                                          data-i18n="nav.dash.ecommerce"> عرض كل المسئولين</a>
+                                                          data-i18n="nav.dash.ecommerce"> View All Super Admins</a>
                                     </li>
                                     <li><a class="menu-item" href="" data-i18n="nav.dash.crypto">أضافة مسئول جديد
                                         </a>
@@ -67,25 +42,25 @@ function SelClinic($city){
                                 </ul>
                             </li>
                             <li class="nav-item"><a href="#"><i class="la la-home"></i>
-                                    <span class="menu-title" data-i18n="nav.dash.main">الموظفين </span>
+                                    <span class="menu-title" data-i18n="nav.dash.main">Employees </span>
                                 </a>
                                 <ul class="menu-content">
                                     <li class="active"><a class="menu-item" href="{{route('employees.index')}}"
-                                                          data-i18n="nav.dash.ecommerce"> عرض كل الموظفين</a>
+                                                          data-i18n="nav.dash.ecommerce">  View All Employees</a>
                                     </li>
-                                    <li><a class="menu-item" href="{{route('employees.create')}}" data-i18n="nav.dash.crypto">اضافة موظف جديد
+                                    <li><a class="menu-item" href="{{route('user.addUsersPage')}}" data-i18n="nav.dash.crypto">Add New Employee
                                         </a>
                                     </li>
                                     <!-- Employees Requests -->
                                     <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
                                         <li class="nav-item"><a href="#"><i class="la la-home"></i>
-                                                <span class="menu-title" data-i18n="nav.dash.main">عرض طلبات الموظفين</span>
+                                                <span class="menu-title" data-i18n="nav.dash.main">  View All Requests</span>
                                             </a>
                                             <ul class="menu-content">
-                                                <li><a class="menu-item" href="" data-i18n="nav.dash.crypto">موظفين قيد الانتظار
+                                                <li><a class="menu-item" href="" data-i18n="nav.dash.crypto">Pending Requests
                                                     </a>
                                                 </li>
-                                                <li><a class="menu-item" href="" data-i18n="nav.dash.crypto">موظفين مرفوضين
+                                                <li><a class="menu-item" href="" data-i18n="nav.dash.crypto">Refused Requests
                                                     </a>
                                                 </li>
 

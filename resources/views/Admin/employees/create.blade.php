@@ -9,56 +9,63 @@
 
 <center>
     <div class="card" style="height: 600px;width: 500px;display: inline-block;margin-top: 20px;text-align: center;padding-top: 20px;padding-bottom: 70px">
-        اضافة موظف جديد
+        Add New User
         <div class="card-body" >
             <form method="POST" action="{{route('employees.store')}}" enctype="multipart/form-data">
                 @csrf
-                <table class="table" style="text-align: right;direction: rtl">
+                <table class="table" style="text-align: left;direction: ltr">
                     <tbody>
                     <tr>
-                        <th scope="row">اسم الموظف</th>
+                        <th scope="row">Name</th>
                         <td>
-                            <input class="btn btn-outline-primary" type="text" name="Uname"  id="Uname" style="text-align: right">
+                            <input class="btn btn-outline-primary" type="text" name="name"  id="name" style="text-align: right">
                         </td>
                     </tr>
                     <tr>
-                        <th scope="row">رقم الهاتف</th>
+                        <th scope="row">Email</th>
                         <td>
-                            <input class="btn btn-outline-primary" type="text" name="Uphone" id="Uphone"  style="text-align: right">
+                            <input class="btn btn-outline-primary" type="text" name="email" id="email"  style="text-align: right">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Password</th>
+                        <td>
+                            <input class="btn btn-outline-primary" type="text" name="password" id="password"  style="text-align: right">
                         </td>
                     </tr>
 
                     <tr>
-                        <th scope="row">البريد الإلكتروني</th>
+                        <th scope="row">Phone Number</th>
                         <td>
-                            <input class="btn btn-outline-primary" type="text" name="Uemail" id="Uemail"  style="text-align: right">
+                            <input class="btn btn-outline-primary" type="text" name="phone" id="phone"  style="text-align: right">
                         </td>
                     </tr>
-                    <tr>
-                        <th scope="row">كلمة المرور</th>
-                        <td>
-                            <input class="btn btn-outline-primary" type="text" name="Upassword" id="Upassword"  style="text-align: right">
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">المدينة</th>
-                        <td>
-                            <input class="btn btn-outline-primary" type="text" name="Ucity" id="Ucity"  style="text-align: right">
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">مسئول</th>
-                        <td>
-                            <select class="btn btn-outline-primary" name="UisAdmin" id="UisAdmin" style="text-align: right">
-                                <option value="false">لا</option>
-                                <option value="true">نعم</option>
 
+
+
+
+                    <tr>
+                        <th scope="row">Department</th>
+                        <td>
+                            <select class="btn btn-outline-primary" name="department" id="department" style="width: 150px">
+                                <option value="Tets">Test</option>
                             </select>
                         </td>
                     </tr>
 
                     <tr>
-                        <th scope="row">الصوره</th>
+                        <th scope="row">Role</th>
+                        <td>
+                            <select class="btn btn-outline-primary" name="UisAdmin" id="UisAdmin"  style="width: 150px">
+                                <option value="">Select Role</option>
+                                <option value="0">Super Admin</option>
+                                <option value="1">Admin</option>
+                                <option value="2">Employee</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Image</th>
                         <td>
                             <input type="file" class="form-control-file" id="photo1" onchange="uploadImage()"  class="btn btn-outline-primary" required >
                             <input type="hidden"  name="image" id="img1">
@@ -70,7 +77,7 @@
                     </tbody>
                 </table>
 
-                <input type="submit" value="اضافة موظف جديد" class="btn btn-primary" name="AddNewCus" >
+                <input type="submit" value="Add New User" class="btn btn-primary" name="AddNewCus" >
             </form>
         </div>
     </div>

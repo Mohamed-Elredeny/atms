@@ -55,6 +55,8 @@
     <!-- END Page Level CSS-->
     <!-- BEGIN Custom CSS-->
     <link rel="stylesheet" type="text/css" href="{{asset('Admin/css-rtl/style-rtl.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('Admin/css-rtl/style.css')}}">
+
     <!-- END Custom CSS-->
 
     <link href="https://fonts.googleapis.com/css?family=Cairo&display=swap" rel="stylesheet">

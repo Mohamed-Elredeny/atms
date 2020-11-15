@@ -1,9 +1,16 @@
 @extends('Admin.includes.header')
-{{ __('cpanel.welcome') }}
 
 <body class="vertical-layout vertical-menu 1-column   menu-expanded blank-page blank-page"
       data-open="click" data-menu="vertical-menu" data-col="1-column">
-<!-- ////////////////////////////////////////////////////////////////////////////-->
+@if ($errors->any())
+    <div class="alert alert-danger">
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+@endif
 <div class="app-content content">
     <div class="content-wrapper">
         <div class="content-header row">
@@ -20,22 +27,17 @@
                                     </div>
                                 </div>
                                 <h6 class="card-subtitle line-on-side text-muted text-center font-small-3 pt-2">
-                                    <span>الدخول للوحة التحكم </span>
+                                    <span>لوحة التحكم </span>
                                 </h6>
                             </div>
 
-                            <!-- begin alet section-->
-                            <div class="row mr-2 ml-2">
-                                <button type="text" class="btn btn-lg btn-block btn-outline-danger mb-2"
-                                        id="type-error">   هناك خطا في بيانات الدحول
-                                </button>
-                            </div>
                             <!-- end alet section-->
 
                             <div class="card-content">
                                 <div class="card-body">
-                                    <form class="form-horizontal form-simple" action="" method="post"
+                                    <form class="form-horizontal form-simple" action="{{route('user.login')}}" method="post"
                                           novalidate>
+                                        @csrf
                                         <fieldset class="form-group position-relative has-icon-left mb-0">
                                             <input type="text" name="email"
                                                    class="form-control form-control-lg input-lg"
@@ -57,18 +59,10 @@
                                             </div>
                                             <span class="text-danger"> </span>
                                         </fieldset>
-                                        <div class="form-group row">
-                                            <div class="col-md-6 col-12 text-center text-md-left">
-                                                <fieldset>
-                                                    <input type="checkbox" name="remember_me" id="remember-me"
-                                                           class="chk-remember">
-                                                    <label for="remember-me">تذكر دخولي</label>
-                                                </fieldset>
-                                            </div>
-                                        </div>
+
                                         <button type="submit" class="btn btn-info btn-lg btn-block"><i
                                                 class="ft-unlock"></i>
-                                            دخول
+                                            login
                                         </button>
                                     </form>
                                 </div>
@@ -80,5 +74,6 @@
         </div>
     </div>
 </div>
+
 
 @extends('Admin.includes.footer')
